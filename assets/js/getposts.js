@@ -2,7 +2,7 @@ function getLocalPosts() {
 
     let xhr = new XMLHttpRequest, article, publish_date_formated, months, _date, _preformated, counter, post_code, first_post
 
-    xhr.open('GET', '/assets/data/posts.json')
+    xhr.open('GET', 'https://eurecka.ml/data/posts.json')
     xhr.responseType = 'json'
     xhr.onload = () => {
 
