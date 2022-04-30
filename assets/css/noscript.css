@@ -1,0 +1,51 @@
+/* Wrapper */
+#wrapper {
+  background-color: #212931;
+  background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+  background-size: auto, auto, 100% auto;
+  background-position: center, center, top center;
+  background-repeat: repeat, no-repeat, no-repeat;
+  background-attachment: fixed, fixed, fixed;
+  position: relative;
+}
+#wrapper.fade-in:before {
+  display: none;
+}
+
+/* Intro */
+body.is-preload #intro {
+  opacity: 1;
+}
+body.is-preload #intro:not(.hidden) + #header + #nav {
+  -moz-transform: none;
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+  opacity: 1;
+}
+
+.ns-alert {
+  position: fixed;
+  color: #000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  background-color: #00000090;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ns-alert p {
+  width: max(270px, 50%);
+  line-height: 2rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  font-family: sans-serif;
+  font-weight: 600;
+  word-spacing: 0.3em;
+}
+
+/*# sourceMappingURL=noscript.css.map */
