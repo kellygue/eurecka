@@ -30,7 +30,7 @@ function getLocalPosts() {
                 <h2><a href="/0${first_post_code}">${first_post.titre}</a></h2>
                 <p>${first_post.descr}</p>
             </header>
-            <a href="/0${first_post_code}" class="image main"><img loading='lazy' src="images/posts/rep${first_post.id}.jpg" alt="${first_post.titre}" /></a>
+            <a href="/0${first_post_code}" class="image main"><img loading='lazy' src="https://eurecka.imgix.net/rep${first_post.id}.jpg" alt="${first_post.titre}" /></a>
             <ul class="actions special">
                 <li><a href="/0${first_post_code}" class="button large">Lire l'article</a></li>
             </ul>
@@ -55,7 +55,7 @@ function getLocalPosts() {
                     <span class="date">${publish_date_formated}</span>
                     <h2><a href="/0${post_code}">${postData.titre}</a></h2>
                 </header>
-                <a href="/0${post_code}" class="image fit"><img loading='lazy' src="images/posts/rep${postData.id}.jpg" alt="${postData.titre}"/></a>
+                <a href="/0${post_code}" class="image fit"><img loading='lazy' src="https://eurecka.imgix.net/rep${postData.id}.jpg" alt="${postData.titre}"/></a>
                 <p>${postData.descr}</p>
                 <ul class="actions special">
                     <li><a href="/0${post_code}" class="button full">Lire l'article</a></li>
